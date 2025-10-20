@@ -4,17 +4,15 @@ import java.util.Scanner;
 
 public class PasswordGenerator {
     public static void main(String[] args) {
-        // New object Random for generating random numbers
         Random random = new Random();
+        Scanner scanner = new Scanner(System.in);
 
         // All symbols which will be used for password
         String symbols = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
         
         // Password length input
         System.out.print("Enter the password length: ");
-        Scanner scanner = new Scanner(System.in);
         int passwordLength = scanner.nextInt();
-        scanner.close();
 
         String password = "";
 
@@ -31,5 +29,24 @@ public class PasswordGenerator {
         }
 
         System.out.println("Generated password: " + password);
+        System.out.print("Test password strength? (y/n) ");
+        String answer = scanner.next();
+
+        switch (answer.toLowerCase()) {
+            case "y", "yes":
+                if (password.length() < 8) {
+                    System.out.println("Weak password!");
+                } else if (password.length() < 12) {
+                    System.out.println("Good password!");
+                } else {
+                    System.out.println("Strong password!");
+                }
+            case "n", "no":
+                System.out.println("Checking skipped...");
+            default:
+                break;
+        }
+
+        scanner.close();
     }
 }
