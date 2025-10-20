@@ -1,4 +1,5 @@
 import java.util.Random;
+import java.util.Scanner;
 
 
 public class PasswordGenerator {
@@ -9,8 +10,11 @@ public class PasswordGenerator {
         // All symbols which will be used for password
         String symbols = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
         
-        // Password length
-        int passwordLength = 10;
+        // Password length input
+        System.out.print("Enter the password length: ");
+        Scanner scanner = new Scanner(System.in);
+        int passwordLength = scanner.nextInt();
+        scanner.close();
 
         String password = "";
 
