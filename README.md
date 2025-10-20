@@ -1,12 +1,13 @@
 # 🔐 Password Generator
 
-A simple Java program that generates random passwords.
+A simple Java program that generates secure random passwords with customizable length and strength checking.
 
 ## ✨ Features
-- Generates random passwords using letters and numbers
-- Custom password length input
-- Simple and easy to use
-- Console-based application
+- Generates random passwords
+- Custom password length
+- Password strength testing
+- Simple and easy to use console interface
+- No external dependencies required
 
 ## 🚀 Getting started
 ```bash
