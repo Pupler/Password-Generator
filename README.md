@@ -1,9 +1,10 @@
 # 🔐 Password Generator
 
-A simple Java program that generates random 10-character passwords.
+A simple Java program that generates random passwords.
 
 ## ✨ Features
 - Generates random passwords using letters and numbers
+- Custom password length input
 - Simple and easy to use
 - Console-based application
 
