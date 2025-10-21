@@ -6,7 +6,7 @@ A simple Java program that generates secure random passwords with customizable l
 - Generates random passwords
 - Custom password length
 - Password strength testing
-- Simple and easy to use console interface
+- User-friendly navigation interface
 - No external dependencies required
 
 ## 🚀 Getting started
