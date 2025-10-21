@@ -10,12 +10,12 @@ public class PasswordGenerator {
         // All symbols which will be used for password
         String symbols = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
         
-        System.out.print("1 - Generate password \n2 - Exit \n\nChoose what to do:");
+        System.out.print("========================== \n=== PASSWORD GENERATOR === \n\n[1] Generate password \n[2] Exit \n\n[?] Choose option: ");
         int chosenNumber = scanner.nextInt();
 
         if (chosenNumber == 1) {
             // Details input
-            System.out.print("Enter the password length: ");
+            System.out.print("[?] Enter the password length: ");
             int passwordLength = scanner.nextInt();
 
             String password = "";
@@ -32,22 +32,22 @@ public class PasswordGenerator {
                 password += randomChar;
             }
 
-            System.out.println("Generated password: " + password);
-            System.out.print("Test password strength? (y/n) ");
+            System.out.println("[+] Generated password: " + password);
+            System.out.print("[?] Test password strength? (y/n) ");
             String answer = scanner.next();
 
             switch (answer.toLowerCase()) {
                 case "y", "yes":
                     if (password.length() < 8) {
-                        System.out.println("Weak password!");
+                        System.out.println("[!] Weak password!");
                     } else if (password.length() < 12) {
-                        System.out.println("Good password!");
+                        System.out.println("[+] Good password!");
                     } else {
-                        System.out.println("Strong password!");
+                        System.out.println("[*] Strong password!");
                     }
                     break;
                 case "n", "no":
-                    System.out.println("Checking skipped...");
+                    System.out.println("[-] Checking skipped...");
                     break;
                 default:
                     break;
@@ -55,10 +55,10 @@ public class PasswordGenerator {
 
             scanner.close();
         } else if (chosenNumber == 2) {
-            System.out.print("Exiting...");
+            System.out.print("[+] Exiting...");
             System.exit(0);
         } else {
-            System.out.print("Error ocurred! Try again.");
+            System.out.print("[!] Error ocurred! Try again.");
         }
     
     }
