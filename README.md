@@ -2,7 +2,7 @@
 
 A simple Java program that generates secure random passwords with customizable length and strength checking.
 
-## ⚙️ Features
+## ✨ Features
 - Generates random passwords
 - Custom password length
 - Password strength testing
