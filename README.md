@@ -1,4 +1,4 @@
-# 🔐 Password Generator
+# 🪄 Password Generator
 
 A simple Java program that generates secure random passwords with customizable length and strength checking.
 
@@ -23,3 +23,7 @@ javac PasswordGenerator.java
 # Run the application
 java PasswordGenerator
 ```
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
