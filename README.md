@@ -2,6 +2,10 @@
 
 A simple Java program that generates secure random passwords with customizable length and strength checking.
 
+## 📸 Preview
+
+<img width="568" height="394" alt="grafik" src="https://github.com/user-attachments/assets/efcbfa9b-1c14-4844-b17d-32c255c3793f" />
+
 ## ✨ Features
 
 - Generates random passwords
