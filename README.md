@@ -1,6 +1,6 @@
 # 🔐 Password Generator
 
-A simple Java program that generates secure random passwords with customizable length and strength checking.
+A lightweight Java application that creates secure random passwords with adjustable length and strength validation.
 
 ## 📸 Preview
 
